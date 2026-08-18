@@ -1,0 +1,11 @@
+name=input("Enter your name:")
+age=int(input("Enter your age:"))
+height=float(input("Enter your height:"))
+a=int(input("Enter first number:"))
+b=int(input("Enter second number:"))
+print("Name:",name,"\nAge:",age,"\nHeight:",height)
+print("Sum:", a + b)
+print("Difference:", a - b)
+print("Product:", a * b)
+print("Division:", a / b)
+
