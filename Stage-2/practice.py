@@ -1,21 +1,14 @@
-class Account:
-    def __init__(self,balance):
-        self.balance=balance
-        pass
+class Circle:
+    def __init__(self,r):
+        self.r=r
 
-    def get_balance(self):
-        print("Current balance:",self.balance)
+    def Area(self):
+        return 3.14 *(self.r**2)
 
-    def credit(self,amount):
-        self.balance=self.balance + amount
-        print("Updated balance:",self.balance)
+    def Perimeter(self):
+        return 2 * 3.14 * self.r
+        
 
-    def debit(self,amount):
-        self.balance=self.balance -amount
-        print("Updated balance:",self.balance)
-
-s1=Account(5000)
-s1.get_balance()
-s1.credit(2000)
-s1.debit(500)
-s1.get_balance()
+c1=Circle(21)
+print(c1.Area())
+print(c1.Perimeter())
