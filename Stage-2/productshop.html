@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>My Product Store</title>
+</head>
+
+<body>
+
+<h1>My Product Store</h1>
+
+<button id="show-products">Show Products</button>
+
+<div id="products" style="display:none;">
+
+    <div class="product">
+        <h2>Wireless Headphones</h2>
+        <p class="price">₹2,499</p>
+    </div>
+
+    <div class="product">
+        <h2>Mechanical Keyboard</h2>
+        <p class="price">₹4,999</p>
+    </div>
+
+</div>
+
+<script>
+    document.getElementById("show-products").onclick = function() {
+        document.getElementById("products").style.display = "block";
+    };
+</script>
+
+</body>
+</html>
