@@ -9,5 +9,5 @@ api.get_user.return_value = {"name": "Alice"}
 
 result = get_user_name(api)
 
-print(result)  # Alice
+print(result)  
 api.get_user.assert_called_once_with()
