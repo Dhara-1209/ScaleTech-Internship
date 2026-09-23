@@ -1,16 +1,15 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 from django.views import View
 
 
 def home(request):
-    return HttpResponse("Hello! This is my Function-Based View.")
+    return render(request, 'home/home.html')
 
 
-def about(request):
-    return HttpResponse("This is the About page.")
+def contact(request):
+    return render(request, 'home/contact.html')
 
 
 class AboutView(View):
-
     def get(self, request):
-        return HttpResponse("Hello! This is my Class-Based View.")
+        return render(request, 'home/about.html')
